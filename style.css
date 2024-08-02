@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: .4px;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    background: url(https://tik-tok.co.uk/wp/wp-content/uploads/2021/12/1-1-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    background: transparent;
+    padding: 5px 20px;
+    transition: .3s linear;
+}
+
+header:hover {
+    background: #d3e8ec7c;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 180px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    filter: drop-shadow(1px 1px 5px #868484);
+
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 20px;
+    color: rgb(97, 144, 197);
+    position: relative;
+    font-size: 1.1em;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(97, 144, 197);
+    left: 0;
+    bottom: -5px;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.contact-btn {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 8px;
+    margin: 0 40px;
+    font-size: 1.1em;
+    background-color: rgb(26, 132, 173);
+    color: rgb(250, 252, 253);
+    border: 2.5px solid rgba(251, 252, 253, 0);
+    transition: .1s linear;
+}
+
+.contact-btn:hover {
+    color: rgb(97, 144, 197);
+    background-color: #fff;
+    border: 2.5px solid rgb(97, 144, 197);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 120px;
+    color: #fff;
+    text-shadow: 3px 2px 5px #575353;
+}
+
+.welcome {
+    padding: 240px 0px 130px;
+}
+
+.banner h2 {
+    margin-left: 20px;
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.banner h1 {
+    font-size: 4.5em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    border-bottom: 3px rgb(241, 238, 238) solid;
+}
+
+.banner p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+
+.aboutus {
+    padding: 50px 200px 150px 200px;
+    line-height: 22px;
+    background: url(https://cdn.vectorstock.com/i/500p/09/87/single-one-line-drawing-girls-reading-books-vector-51010987.avif);
+    background-size: calc(45%);
+    background-repeat: no-repeat;
+    background-position-y: 110%;
+    background-position-x: 4%;
+}
+
+.abt-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-info {
+    width: 40%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.about-info h1 {
+    font-size: 12em;
+}
+
+.about-info h2 {
+    color: #414142;
+    font-size: 2em;
+    line-height: normal;
+}
+
+.about-info p {
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: 10px 10px 0 0;
+    line-height: 1.5em;
+    color: #555561;
+}
+
+.about-img {
+    padding: 180px 250px;
+    border-radius: 40px 100px 70px 35%;
+    background: url(https://t4.ftcdn.net/jpg/01/45/80/37/360_F_145803741_BiTDyEWoP7QpRppdyc8PWdLXJU723XY4.jpg);
+    background-position: center;
+    box-shadow: 3rem 2rem 1px yellow;
+}
+
+
+.philosophy-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 200px;
+    background: url(https://www.oakridge.in/wp-content/uploads/2021/12/VIS_0319.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.p-c {
+    width: 40%;
+}
+
+.p-c-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-c p {
+    text-align: start;
+    color: #fdfbfb;
+    font-size: 1.8em;
+    font-weight: 500;
+    text-shadow: 2px 1px 1px #5e5e63;
+    padding-right: 30px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.slide {
+    width: 60%;
+    height: 90%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px #6e6d6d;
+    position: absolute;
+    transition: 1.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide:nth-child(1) .slide-img {
+    background-image: url(https://s3.ap-south-1.amazonaws.com/assets.klayschools.com/wp-content/uploads/2023/05/22034353/banner_img_children-1024x558-1.webp);
+}
+
+.slide:nth-child(2) .slide-img {
+    background-image: url(https://st.depositphotos.com/1000137/2646/i/450/depositphotos_26460319-stock-photo-cute-preschoolers-drawing-with-colorful.jpg);
+}
+
+.slide:nth-child(3) .slide-img {
+    background-image: url(https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1676577929/hello-baby/8_signs_great_daycare_header.jpg);
+}
+
+.slide:nth-child(4) .slide-img {
+    background-image: url(https://stankidspreschools.com/img/slide1.jpg);
+}
+
+.slide:nth-child(5) .slide-img {
+    background-image: url(https://media.istockphoto.com/id/1151224949/photo/teacher-embracing-preschool-boy.jpg?s=612x612&w=0&k=20&c=ImA7_QAPZ8A3vnDWGy5C1wGOVzr4fSoQx2doDTXSRyo=);
+}
+
+.slide:nth-child(6) .slide-img {
+    background-image: url(https://www.srakids.com/img/class/nursery.jpg);
+}
+
+
+.content {
+    background: #fff;
+    width: 100%;
+    height: 92%;
+    color: #535856;
+
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content h3 {
+
+    color: #393d3c;
+    font-size: 1.4em;
+}
+
+.content p {
+    padding: 0 12px;
+    font-size: 1em;
+}
+
+.slide-nav button {
+    padding: 100px 25px 0;
+    border-radius: 55%;
+    border: none;
+    border-color: transparent;
+    background: transparent;
+}
+
+.slide-nav button i {
+    cursor: pointer;
+    font-size: 4.5em;
+    color: #f3f1f1;
+    text-shadow: 0 2px 2px #999990;
+    transition: 0.4s;
+}
+
+.statements {
+    padding: 50px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+}
+
+.v-m {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.statement-img {
+    padding: 22vh 13vw;
+    margin: 5px;
+}
+
+.img {
+    background: url(https://t4.ftcdn.net/jpg/03/81/87/39/360_F_381873910_DLCraWADd2EicMJ0kZjpBm0NRA7BJxON.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20% 30% 20% 5%;
+    box-shadow: 25px -25px 1px orange;
+}
+
+.img1 {
+    background: url(https://drskids.com/wp-content/uploads/2021/02/our-features.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20% 5% 20% 30%;
+    box-shadow: -25px 25px 1px crimson;
+
+}
+
+.statement {
+    width: 30vw;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 1.1em;
+    color: #68686d;
+    /* margin: 5px; */
+}
+
+.statements h1 {
+    font-size: 2.1em;
+    padding-bottom: 15px;
+    text-shadow: 1.2px 1.1px 2px #575353;
+}
+
+.vision h1 {
+    color: orange;
+}
+
+.mission h1 {
+    color: crimson;
+}
+
+.vision>div,
+.mission>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision>div img,
+.mission>div img {
+    width: 5vw;
+    padding: 0 15px 5px;
+    filter: drop-shadow(0.2rem 0.1rem 0.3rem rgba(100, 97, 97, 0.5));
+}
+
+
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 200px;
+}
+
+.w-c-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-c1 {
+    width: 32vw;
+    padding-bottom: 50px;
+}
+
+.why-choose-us .w-c .img {
+    padding: 35vh 18vw;
+    margin: 0 10px 50px;
+    background: url(https://www.momnewsdaily.com/app/uploads/2020/07/kids-education.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 38% 30% 20% 20%;
+    box-shadow: -40px -40px 1px yellow;
+}
+
+
+.w-c1>div>p {
+    font-size: 3.2em;
+    font-weight: 800;
+    color: rgb(117, 4, 128);
+    text-shadow: 1px 2px 3px rgb(117, 4, 128);
+    padding: 20px 0;
+}
+
+.slider-section {
+    text-align: left;
+    height: 46vh;
+    border-radius: 30px;
+}
+
+.slide-content {
+    line-height: 5vh;
+}
+
+.slide-content h3 {
+    padding: 0 20px;
+    font-size: 1.6em;
+    color: #393d3c;
+    text-shadow: 1px 1px 1px #a09999;
+}
+
+.slide-content p {
+    padding: 20px;
+    font-size: 1.4em;
+    color: #5e5e63;
+    text-shadow: 0 1px 1px #a09999;
+}
+
+
+.activities {
+    padding: 50px 200px 0;
+    text-align: center;
+    background: url(https://cdn.vectorstock.com/i/500p/05/18/kindergarten-and-preschool-doodle-icons-vector-51280518.avif);
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+
+.activities h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: rgb(252, 249, 102);
+    text-shadow: 1px 1px 2px #7a7802;
+    background-color: rgba(254, 254, 255, 0.603);
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.activity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.activity-card {
+    width: 250px;
+    height: 260px;
+    margin: 20px 20px 25px;
+    background-color: rgba(245, 243, 243, 0.836);
+    border: 2px solid rgba(238, 235, 235, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.4);
+    transition: transform .3s ease-in-out;
+
+}
+
+.activity-card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.activity-card h4 {
+    color: #2e2d2d;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.activity-icon {
+    padding: 50px;
+    background-size: contain;
+    filter: drop-shadow(0.5rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5));
+    margin: 5px;
+}
+
+.activity-card p {
+    font-weight: 600;
+    color: #494d4c;
+}
+
+.activity-card:nth-child(1) .activity-icon {
+    background-image: url(https://cdn-icons-png.freepik.com/128/724/724456.png);
+}
+
+.activity-card:nth-child(2) .activity-icon {
+    background-image: url(https://cdn-icons-png.freepik.com/128/10221/10221776.png);
+}
+
+.activity-card:nth-child(3) .activity-icon {
+    background-image: url(https://cdn-icons-png.freepik.com/128/10910/10910776.png);
+}
+
+.activity-card:nth-child(4) .activity-icon {
+    background-image: url(https://cdn-icons-png.freepik.com/256/4357/4357836.png?ga=GA1.1.863683652.1677488881&semt=ais_hybrid);
+}
+
+.activity-card:nth-child(5) .activity-icon {
+    background-image: url(https://cdn-icons-png.freepik.com/128/9301/9301373.png);
+}
+
+.activity-card:nth-child(6) .activity-icon {
+    background-image: url(https://cdn-icons-png.freepik.com/128/9671/9671501.png);
+}
+
+.activity-card:nth-child(7) .activity-icon {
+    background-image: url(https://cdn-icons-png.freepik.com/128/8605/8605384.png);
+}
+
+
+.break-box {
+    padding: 120px 0;
+    background: url(https://cdn.vectorstock.com/i/500p/90/63/children-dancing-on-the-background-color-spray-vector-23359063.avif);
+    background-position: center;
+    background-size: contain;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.f-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+}
+
+.contact-us {
+    width: 230px;
+}
+
+.address {
+    width: 400px;
+}
+
+.social-network a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: 30px;
+    padding: 30px 15px 0 0;
+}
+
+.social-network i {
+    padding-right: 10px;
+}
+
+.social-network {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 15px 0;
+}
+
+.footer-card {
+    padding: 15px 20px 30px;
+    font-weight: 600;
+
+}
+
+.about-us p,
+.contact-us p,
+.address p {
+    padding: 5px 0;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    color: #2f3131;
+}
+
+.contact-us p,
+.address p {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-us i,
+.address i {
+    padding-right: 12px;
+    font-size: 20px;
+    color: black;
+}
+
+.f-logo img {
+    width: 150px;
+    height: 120px;
+    mix-blend-mode: multiply;
+}
+
+.address img {
+    width: 130px;
+    height: 130px;
+    padding-left: 30px;
+}
