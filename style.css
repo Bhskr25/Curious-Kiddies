@@ -193,7 +193,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 60px 200px;
+    padding: 60px 0px;
     background: url(https://www.oakridge.in/wp-content/uploads/2021/12/VIS_0319.jpg);
     background-size: cover;
     background-position: center;
@@ -410,11 +410,11 @@ nav {
 
 .w-c1 {
     width: 32vw;
-    padding-bottom: 50px;
+    padding: 50px 0 50px 20px;
 }
 
 .why-choose-us .w-c .img {
-    padding: 35vh 18vw;
+    padding: 250px 300px;;
     margin: 0 10px 50px;
     background: url(https://www.momnewsdaily.com/app/uploads/2020/07/kids-education.jpg.webp);
     background-size: cover;
